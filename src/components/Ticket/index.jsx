@@ -1,15 +1,19 @@
+import { useNavigate } from "react-router-dom"
+
 import { useMutation } from "@apollo/client"
 import { DELETE_TICKET } from "../../queries/Ticket"
 import { UPDATE_SEAT_ONE } from "../../queries/Seat"
 
 import style from "./style.module.css"
 
-export const Ticket = ({ticket, refetch}) => {
+export const Ticket = ({ticket}) => {
+
+    const navigate = useNavigate()
 
     const [delete_ticket, {}] = useMutation(DELETE_TICKET, {
         onCompleted: (data) => {
             alert("Ticket deleted successfully")
-            refetch()
+            navigate(0)
         },
         onError: (error) => {
             console.log(error)

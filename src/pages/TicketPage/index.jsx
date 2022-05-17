@@ -26,7 +26,7 @@ const TicketPage = () => {
 
     const [tickets, setTickets] = useState([])
 
-    const [get_ticket, {loading, refetch}] = useLazyQuery(GET_TICKET, {
+    const [get_ticket, {loading}] = useLazyQuery(GET_TICKET, {
         onCompleted: (data) => {
             setTickets(data.ticket)
         },
@@ -55,7 +55,7 @@ const TicketPage = () => {
                         <h1>No ticket :(</h1>
                     ) : (
                         tickets.map((ticket, ticketIdx) => (
-                            <Ticket ticket={ticket} key={ticketIdx} refetch={refetch}/>
+                            <Ticket ticket={ticket} key={ticketIdx}/>
                         ))
                     )
                 )}
