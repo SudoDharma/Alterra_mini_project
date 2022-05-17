@@ -29,6 +29,7 @@ const Login = () => {
                 localStorage.setItem("name", data.user[0].name)
 
                 navigate("/")
+                navigate(0)
             }
         },
         onError: (err) => {
