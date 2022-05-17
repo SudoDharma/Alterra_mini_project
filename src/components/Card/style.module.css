@@ -1,0 +1,33 @@
+.container{
+    position: relative;
+    padding-bottom: 1rem;
+
+    border: 1px solid black;
+    border-radius: 10px;
+    
+    height: 340px;
+    width: 150px;
+}
+
+.container img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    width: 150px;
+}
+
+.container h3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.movie_detail{
+    display: flex;
+    flex-direction: column;
+    
+
+    margin: 0.5rem;
+}

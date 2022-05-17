@@ -1,0 +1,30 @@
+.container {
+    padding-top: 5rem;
+    line-height: 3rem;
+
+    width: 80px;
+    height: 100%;
+    position: fixed;
+    background-color: wheat;
+
+    text-align: center;
+}
+
+.container ul{
+    list-style-type: none;
+}
+
+.container a{
+    text-decoration: none;
+    color: black;
+}
+
+.container li{
+    padding: 0.2rem;
+
+    width: 100%;
+    transition: 0.3s;
+}
+.container li:hover{
+    background-color: white;
+}

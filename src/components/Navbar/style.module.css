@@ -1,0 +1,25 @@
+.container{
+    position: fixed;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 6rem;
+    width: 100%;
+
+    background-color: wheat;
+}
+
+.container h1, .container h3{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container h1:hover, .container h3:hover{
+    opacity: 0.6;
+}
+
+.container span{
+    color: teal;
+}

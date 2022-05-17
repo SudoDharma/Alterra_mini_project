@@ -1,0 +1,15 @@
+.container{
+    margin: 10rem auto;
+    padding: 1rem;
+
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 500px;
+
+    background-color: wheat;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 1rem;
+}

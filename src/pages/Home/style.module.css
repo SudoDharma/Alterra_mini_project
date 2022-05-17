@@ -1,0 +1,17 @@
+.container{
+    padding: 5rem 2rem 2rem 6rem;
+}
+
+.now_showing_container h1{
+    margin-bottom: 0.5rem;
+}
+
+.movies_slider{
+    display: flex;
+    column-gap: 0.5rem;
+    overflow-x: scroll;
+}
+
+.movies_slider::-webkit-scrollbar{
+    display: none;
+}
