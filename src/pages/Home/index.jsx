@@ -4,11 +4,15 @@ import axios from "axios"
 
 import { useState, useEffect } from "react"
 
+import { useNavigate } from "react-router-dom"
+
 import Card from "../../components/Card"
 import Navbar from "../../components/Navbar"
 import Sidebar from "../../components/Sidebar"
 
 const Home = () => {
+
+    const navigate = useNavigate()
 
     const [nowShowing, setNowShowing] = useState()
     const [popular, setPopular] = useState()

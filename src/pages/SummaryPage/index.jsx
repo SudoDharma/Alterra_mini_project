@@ -44,7 +44,9 @@ const SummaryPage = () => {
         onCompleted: (data) => {
             alert("Ticket purchased successfully")
             setLoading(false)
+
             navigate("/")
+            navigate(0)
         },
         onError: (error) => {
             console.log(error)
