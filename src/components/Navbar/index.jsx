@@ -36,7 +36,7 @@ const Navbar = () => {
 
     return(
         <div className={style.container}>
-            <h1>Ticks<span>Me</span></h1>
+            <h1 onClick={() => navigate("/")}>Ticks<span>Me</span></h1>
             {isLoggedIn ? (
                 <h3 onClick={() => logout()}>Hello, {localStorage.getItem("name")}</h3>
             ) : (

@@ -18,7 +18,7 @@ export const DELETE_TICKET = gql`
 
 export const GET_TICKET = gql`
     query get_ticket($email: String){
-        ticket(where: {user_email: {_eq: $email}}) {
+        ticket(where: {user_email: {_eq: $email}}, order_by: {id: asc}) {
             id
             seat_id
             user_email
